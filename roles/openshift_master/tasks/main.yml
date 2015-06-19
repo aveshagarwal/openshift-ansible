@@ -52,7 +52,7 @@
   when: openshift.master.embedded_dns
 
 - name: Install OpenShift Master package
-  yum: pkg=openshift-master state=present
+  yum: pkg=atomic-enterprise-master state=present
   register: install_result
 
 - name: Reload systemd units
